@@ -256,13 +256,12 @@ enum class DifSignedness {
 
 const char *toString(DifSignedness s);
 DifSignedness toDifSignedness(const char *s);
-
+#undef STATUS
 enum PrintProperty {
   REQUIRED = 1, // If no data has arrived, then print this field anyway with NaN
                 // or null.
   DEPRECATED = 2, // This field is about to be removed or changed in a newer
                   // driver, which will have a new name.
-  #undef STATUS
   STATUS = 4, // This is >the< status field and it should read OK of not error
               // flags are set.
   INCLUDE_TPL_STATUS = 8,  // This text field also includes the tpl status
