@@ -2314,7 +2314,7 @@ const char *toString(PrintProperty p) {
   case PrintProperty::DEPRECATED:
     return "DEPRECATED";
   case PrintProperty::WMBUS_STATUS:
-    return "STATUS";
+    return "WMBUS_STATUS";
   case PrintProperty::INCLUDE_TPL_STATUS:
     return "INCLUDE_TPL_STATUS";
   case PrintProperty::INJECT_INTO_STATUS:
@@ -2333,7 +2333,7 @@ PrintProperty toPrintProperty(const char *s) {
     return PrintProperty::REQUIRED;
   if (!strcmp(s, "DEPRECATED"))
     return PrintProperty::DEPRECATED;
-  if (!strcmp(s, "STATUS"))
+  if (!strcmp(s, "WMBUS_STATUS"))
     return PrintProperty::WMBUS_STATUS;
   if (!strcmp(s, "INCLUDE_TPL_STATUS"))
     return PrintProperty::INCLUDE_TPL_STATUS;
