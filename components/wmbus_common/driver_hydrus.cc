@@ -50,7 +50,7 @@ namespace
         addStringField(
             "status",
             "Status of meter.",
-            PrintProperty::STATUS | PrintProperty::INCLUDE_TPL_STATUS);
+            PrintProperty::WMBUS_STATUS | PrintProperty::INCLUDE_TPL_STATUS);
 
         addNumericFieldWithExtractor(
             "total",

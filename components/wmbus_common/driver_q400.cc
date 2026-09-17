@@ -42,7 +42,7 @@ namespace
         addStringField(
             "status",
             "Status and error flags.",
-            DEFAULT_PRINT_PROPERTIES | PrintProperty::STATUS | PrintProperty::INCLUDE_TPL_STATUS);
+            DEFAULT_PRINT_PROPERTIES | PrintProperty::WMBUS_STATUS | PrintProperty::INCLUDE_TPL_STATUS);
 
         addStringFieldWithExtractor(
             "set_datetime",

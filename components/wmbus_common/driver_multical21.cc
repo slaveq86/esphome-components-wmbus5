@@ -42,7 +42,7 @@ namespace
         addStringFieldWithExtractorAndLookup(
             "status",
             "Status of meter.",
-            DEFAULT_PRINT_PROPERTIES  | PrintProperty::STATUS,
+            DEFAULT_PRINT_PROPERTIES  | PrintProperty::WMBUS_STATUS,
             FieldMatcher::build()
             .set(DifVifKey("02FF20")),
             Translate::Lookup()

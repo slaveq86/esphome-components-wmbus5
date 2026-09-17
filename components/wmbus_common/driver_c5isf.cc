@@ -94,7 +94,7 @@ namespace
         addStringFieldWithExtractorAndLookup(
             "status",
             "Status and error flags.",
-            PrintProperty::STATUS | PrintProperty::INCLUDE_TPL_STATUS,
+            PrintProperty::WMBUS_STATUS | PrintProperty::INCLUDE_TPL_STATUS,
             FieldMatcher::build()
             .set(VIFRange::ErrorFlags),
             {
